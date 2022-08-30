@@ -9,23 +9,24 @@
 .fr {
   float: right;
 }
-.clearfix {
-  clear: both;
-}
-
 main {
   background-image: url(img/Group1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-position: relative;
+  position: relative;
   padding-top: 40px;
 }
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  background-color:cornsilk;
+  /* background-color:cornsilk; */
+}
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .left-block {
   width: 630px;
@@ -42,11 +43,14 @@ position: relative;
   margin-bottom: 12px;
 }
 .raiting-holder {
-  /* float: left; */
-  height: 46px;
   width: 170px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.raiting-holder:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .btn {
   background: linear-gradient(90deg,#0D0F42 -2.98%,rgba(9, 14, 113, 0.73) 50%);
@@ -55,7 +59,7 @@ position: relative;
   width: 40px;
   height: 40px;
   float: left;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 .btn img {
   margin: auto;
@@ -98,11 +102,31 @@ position: relative;
   color: #ffffff;
   text-align: center;
 }
-.row img{
-  margin-top: 16px;
-}
+
 .avatar-logo {
   position: absolute;
   top: 20px;
   right: 40px;
+}
+.img-holder {
+  position: relative;
+  margin-top: 16px;
+}
+.img-holder:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 40px;
 }
