@@ -10,7 +10,7 @@
   float: right;
 }
 main {
-  background-image: url(img/Group1.png);
+  background-image: url(img/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,7 +74,7 @@ main {
 .raiting-block__text {
   display: block;
 }
-.test img, span {
+.raiting-value img, span {
   vertical-align: middle;
 }
 .left-text {
@@ -101,6 +101,7 @@ main {
 .block-title {
   color: #ffffff;
   text-align: center;
+  font-size: 32px;
 }
 
 .avatar-logo {
