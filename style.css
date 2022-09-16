@@ -81,7 +81,7 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  line-height: 29px;
+  line-height: 1.4;
   color: #FFFFFF;
 }
 .logo {
@@ -90,6 +90,16 @@ main {
 .left-block-content {
   padding-left: 80px;
 }
+
+.raiting-value img {
+  transition: 0.4s;
+  filter: grayscale(100%);
+}
+.raiting-value img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+/* right-block */
 .bot-shadow {
   position: absolute;
   width: 100%;
@@ -130,4 +140,9 @@ main {
   transform: translate(-50%, -50%);
   margin: 0;
   width: 40px;
+  transition: 0.2s;
+}
+.play-btn:hover {
+  width: 60px;
+  cursor: pointer;
 }
